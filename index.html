@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>아이언맨 피규어</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+
+        .container {
+            margin: 30px auto;
+            width: 700px;
+        }
+
+        img {
+            width: 500px;
+            margin: 30px auto;
+        }
+
+        .pay {
+            font-size: 12px;
+            font-weight: 400;
+            margin-left: 20px;
+        }
+
+        .wrap {
+            margin: 20px 0 50px 20px;
+        }
+
+        .input {
+            display: flex;
+        }
+
+        .input label {
+            width: 100px;
+        }
+
+        .input input,
+        .input select{
+            width: 300px;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .button button {
+            padding: 10px 50px;
+        }
+
+
+
+    </style>
+
+    <script>
+        function order() {
+            alert('주문이 완료되었습니다.')
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://image.fmkorea.com/files/attach/new/20200121/486616/882035455/2625558308/5aea6b9dbbd8945e631f5b276465195d.jpg"
+                 class="figure-img img-fluid rounded" alt="...">
+            <div class="card-body">
+                <h3 class="card-title">아이언맨 피규어 <strong class="pay">가격: 99,999원 / 개</strong></h3>
+                <p class="card-text">올 시즌 한정판!!! 50개만 판매하는 피규어!!! 고퀄리티를 자랑하는 아이언맨 피규어입니다!!</p>
+            </div>
+            <div class="wrap">
+                <div class="form-group input">
+                    <label for="exampleFormControlInput1">주문자 성함:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="form-group input">
+                    <label for="exampleFormControlSelect1">수량:</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group input">
+                    <label for="exampleFormControlInput1">주소:</label>
+                    <input type="adress" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="form-group input">
+                    <label for="exampleFormControlInput1">전화번호:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"ㄱ>
+                </div>
+            </div>
+            <div class="button">
+                <button onclick="order()" type="button" class="btn btn-primary">주문하기</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
